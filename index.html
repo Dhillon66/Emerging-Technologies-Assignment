@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="brand-title">Finance Calculator Suite</div>
+    <button class="toggle-button" aria-label="Toggle Menu">
+      ☰
+    </button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Basic Calculator</a>
+      <a href="investment.html">Investment</a>
+      <a href="debt.html">Debt</a>
+      <a href="emi.html">EMI</a>
+      <a href="currency.html">Currency</a>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <div class="calc-box">
+      <h2>Basic Calculator</h2>
+      <label>First Number
+        <input type="number" id="basic-num1" />
+      </label>
+      <label>Second Number
+        <input type="number" id="basic-num2" />
+      </label>
+      <label>Operation
+        <select id="basic-operation">
+          <option value="add">Add (+)</option>
+          <option value="subtract">Subtract (-)</option>
+          <option value="multiply">Multiply (×)</option>
+          <option value="divide">Divide (÷)</option>
+          <option value="percentage">Percentage (%)</option>
+        </select>
+      </label>
+      <button id="calculate-basic">Calculate</button>
+      <div class="result" id="basic-result"></div>
+      <button id="export-basic-pdf">Export Result as PDF</button>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

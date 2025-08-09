@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <div class="brand-title">Finance Calculator Suite</div>
+    <button class="toggle-button" aria-label="Toggle Menu">
+      ☰
+    </button>
+    <div class="nav-links">
+      <a href="index.html">Basic Calculator</a>
+      <a href="investment.html">Investment</a>
+      <a href="debt.html">Debt</a>
+      <a href="emi.html">EMI</a>
+      <a href="currency.html" class="active">Currency</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="container">
+    <div class="calc-box">
+      <h2>Currency Converter</h2>
+      <label>Amount
+        <input type="number" id="curr-amount" min="0" step="0.01" />
+      </label>
+      <label>From
+        <select id="curr-from">
+          <option value="USD">United States (USD)</option>
+          <option value="CAD">Canada (CAD)</option>
+          <option value="GBP">United Kingdom (GBP)</option>
+          <option value="INR">India (INR)</option>
+          <option value="BDT">Bangladesh (BDT)</option>
+          <option value="PKR">Pakistan (PKR)</option>
+          <option value="JPY">Japan (JPY)</option>
+          <option value="CNY">China (CNY)</option>
+          <option value="RUB">Russia (RUB)</option>
+        </select>
+      </label>
+      <label>To
+        <select id="curr-to">
+          <option value="USD">United States (USD)</option>
+          <option value="CAD">Canada (CAD)</option>
+          <option value="GBP">United Kingdom (GBP)</option>
+          <option value="INR">India (INR)</option>
+          <option value="BDT">Bangladesh (BDT)</option>
+          <option value="PKR">Pakistan (PKR)</option>
+          <option value="JPY">Japan (JPY)</option>
+          <option value="CNY">China (CNY)</option>
+          <option value="RUB">Russia (RUB)</option>
+        </select>
+      </label>
+      <button id="convert-currency">Convert</button>
+      <div class="result" id="currency-result"></div>
+      <button id="export-currency-pdf">Export Result as PDF</button>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
